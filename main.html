@@ -11,57 +11,59 @@
 </head>
 <div class="container-fluid border border-5 border-primary">
 	<h1 class="text-center">Internship Form</h1>
-	<form class=" row py-2">
+	<form class=" row py-2 was-validated">
 		
 			<div class="col-4">
 				<label for="first-name-input" class="form-label">First Name</label>
-				<input id="first-name-input" type="text" class="form-control required">
-				<small class="form-text">First name required</small>
+				<input id="first-name-input" type="text" class="form-control" required>
+				<small class="invalid-feedback">First name required</small>
 			</div>
 
 			<div class="col-4">
 				<label for="last-name-input" class="form-label">Last Name</label>
-				<input id="last-name-input" type="text" class="form-control required">
-				<small class="form-text">Last name required</small>
+				<input id="last-name-input" type="text" class="form-control " required>
+				<small class="form-text invalid-feedback">Last name required</small>
 			</div>
 
 			<div class="col-4">
 				<label for="email-input" class="form-label">Email</label>
-				<input id="email-input" type="email" class="form-control required">
-				<small class="form-text">Email required</small>
+				<input id="email-input" type="email" class="form-control "required>
+				<small class="form-text invalid-feedback">Email required</small>
 			</div>
 
 
 		<div class="col-6">
 				<label for="college-input" class="form-label">College</label>
-				<input id="college-input" type="text" class="form-control required">
-				<small class="form-text">Please provide a valid college</small>
+				<input id="college-input" type="text" class="form-control "required>
+				<small class="form-text invalid-feedback">Please provide a valid college</small>
 			</div>
 
-	 <div class="col-md-3">
-            <label for="inputState" class="form-label">Graduation</label>
-                <select id="inputState" class="form-select">
-                   <option selected>Choose...</option>
-                    <option>2020</option>
-					<option>2021</option>
-					<option>2022</option>
-					<option>2023</option>
-                </select>
-		 	<small class="form-text">Please enter  a valid Graduation Year</small>
+  <div class="col-3">
+	  	<label for="graduation-year-input" class="form-label">Graduation Year</label>
 
-        </div>
+    <select  class="form-select" required>
+      <option value="">2020</option>
+      <option value="1">2021</option>
+      <option value="2">2022</option>
+      <option value="3">2023</option>
+    </select>
+    <small class="invalid-feedback">Example invalid select feedback</small>
+	  
+  </div>
 		
 
 			<div class="col-3">
-				<label for="roll-no-input" class="form-label">First Name</label>
-				<input id="roll-no-input" type="number" class="form-control required">
-				<small class="form-text">First name required</small>
+				<label for="roll-no-input" class="form-label">Roll no.</label>
+				<input id="roll-no-input" type="number" class="form-control "required>
+				<small class="form-text invalid-feedback">please provide valid roll no.</small>
 			</div>
 		
 	<div class="col-12">
        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="conditions-checkbox">Check me out</label>
+          <input class="form-check-input" type="checkbox" id="conditions-checkbox" required>
+          <label class="form-check-label" for="conditions-checkbox">Agree to term and condition</label>
+		   <small class="form-text invalid-feedback">You must agree before submitting</small>
+
        </div>
    </div>
 		
